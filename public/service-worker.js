@@ -16,9 +16,9 @@ self.addEventListener('install', (event) => {
   event.waitUntil(fetchConfig)
 })
 
-self.addEventListener('activate', (event) => {
-  event.waitUntil(self.clients.claim())
-})
+// self.addEventListener('activate', (event) => {
+//   event.waitUntil(self.clients.claim())
+// })
 
 function replaceOrigin(url, origin) {
   const urlObject = new URL(url)
